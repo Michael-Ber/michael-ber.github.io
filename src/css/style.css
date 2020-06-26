@@ -142,5 +142,42 @@ nav {
     border-radius: 4px;
 }
 
+.advantages {
+    padding: 71px 0 113px 0;
+}
 
+.advantages .section_header {
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 11px 6px 12px;
+}
 
+.advantages .section_header_big {
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-top: 38px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.round {
+    width: 113px;
+    height: 113px;
+    border-radius: 100%;
+    background-color: #1eacc7;
+}
+
+/* .advantages .adv_item {
+    display: flex;
+    justify-content: start;
+} */
