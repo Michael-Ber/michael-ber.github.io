@@ -2,7 +2,11 @@
 $color-blue: #1eacc7
 $color-red:  #ff5656
     
-    
+@mixin btn_hover 
+    &:hover
+        background-image: none
+        background-color: $color-blue
+ 
     
 *
     font-family: 'Roboto', sans-serif
@@ -27,7 +31,7 @@ nav
     list-style-type: none
     padding: 13px 70px
 
-    .menu_link
+    &_link
         color: #ffffff
         font-size: 15px
         font-weight: 300
@@ -39,17 +43,17 @@ nav
     background-color: rgba(0, 0, 0, 0.6)
     width: 100%
 
-    .subheader_logo
+    &_logo
         display: block
         margin-top: 16px
 
-    .subheader_official
+    &_official
         opacity: 0.5
         color: #ffffff
         font-size: 13px
         font-weight: 400
 
-    .subheader_callus
+    &_callus
         display: block
         margin-top: 23px
         margin-bottom: 8px
@@ -59,7 +63,7 @@ nav
         line-height: 11px
         text-align: right
 
-    .subheader_tel
+    &_tel
         display: block
         color: #ffffff
         font-size: 22px
@@ -68,7 +72,7 @@ nav
         line-height: 16px
         text-align: right
 
-    .subheader_btn
+    &_btn
         margin-top: 19px
         width: 172px
         height: 46px
@@ -82,13 +86,14 @@ nav
         font-weight: 400
         line-height: 10px
         text-transform: uppercase
+        @include btn_hover
 
 .main
     min-height: 799px
     background: url('/src/img/bg/bg_main.jpg') center (center / cover) no-repeat
     padding: 150px 0 135px 0
 
-    .main_header
+    &_header
         margin: 0
         text-align: center
         color: #ffffff
@@ -97,7 +102,7 @@ nav
         font-size: 60px
         line-height: 60px
 
-    .main_subheader
+    &_subheader
         text-align: center
         color: #ffffff
         font-size: 36px
@@ -107,7 +112,7 @@ nav
         line-height: 36px
         margin-top: 8px
 
-    .main_content
+    &_content
         color: #ffffff
         font-size: 18px
         font-weight: 400
@@ -115,7 +120,7 @@ nav
         margin-top: 23px
         text-align: center
 
-    .main_btn
+    &_btn
         display: block
         margin: 118px auto 0 auto
         width: 259px
@@ -129,10 +134,7 @@ nav
         font-weight: 400
         text-transform: uppercase
         border-radius: 4px
-
-
-
-    
+        @include btn_hover
 
 .section_header
     margin: 0 auto
@@ -184,7 +186,20 @@ nav
         justify-content: center
         align-items: flex-start
         margin-bottom: 35px
-
+        &_wrapper
+            margin-left: 26px
+            width: 342px
+        &_header
+            color: $color-blue
+            font-size: 17px
+            font-weight: 400
+            line-height: 21px
+        &_content
+            color: #202020
+            font-size: 15px
+            font-weight: 300
+            line-height: 21px
+          
 .round
     display: flex
     justify-content: center
@@ -193,31 +208,14 @@ nav
     height: 113px
     border-radius: 100%
     background-color: $color-blue
-
-.advantages .adv_item .adv_item_wrapper
-    margin-left: 26px
-    width: 342px
-
-    .adv_item_header
-        color: $color-blue
-        font-size: 17px
-        font-weight: 400
-        line-height: 21px
-
-    .adv_item_content
-        color: #202020
-        font-size: 15px
-        font-weight: 300
-        line-height: 21px
-
+        
 
 .mobile
     background: url('../img/bg/bg_second.jpg') center center/cover no-repeat
     min-height: 864px
     padding: 48px 0 80px 0
-
     .row
-    margin-top: 32px
+        margin-top: 32px
 
     &_item
        position: relative
