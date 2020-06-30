@@ -1,3 +1,9 @@
+
+$color-blue: #1eacc7
+$color-red:  #ff5656
+    
+    
+    
 *
     font-family: 'Roboto', sans-serif
 
@@ -68,7 +74,7 @@ nav
         height: 46px
         box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
         border: none
-        background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+        background-image: linear-gradient(to top, $color-blue 0%, #4ce2ff 100%)
         border-radius: 4px
         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
         color: #ffffff
@@ -116,7 +122,7 @@ nav
         height: 63px
         box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
         border: none
-        background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+        background-image: linear-gradient(to top, $color-blue 0%, #4ce2ff 100%)
         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
         color: #ffffff
         font-size: 18px
@@ -124,33 +130,55 @@ nav
         text-transform: uppercase
         border-radius: 4px
 
-.advantages
-    padding: 71px 0 113px 0
+
 
     
 
-    .section_header
-        margin: 0 auto
-        width: 112px
-        height: 24px
-        background-color: #000000
+.section_header
+    margin: 0 auto
+    width: 112px
+    height: 24px
+    background-color: #000000
+    color: #ffffff
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: center
+    padding: 5px 11px 6px 12px
+    &_3
+        background-color: #ffffff
+        color: #070716
+    
+
+.section_header_big
+    color: #222222
+    font-size: 38px
+    font-weight: 700
+    line-height: 27px
+    text-transform: uppercase
+    margin-top: 38px
+    margin-bottom: 40px
+    text-align: center
+    &_2
+        margin-bottom: 19px
+    &_3
         color: #ffffff
-        font-size: 11px
-        font-weight: 400
-        text-transform: uppercase
-        text-align: center
-        padding: 5px 11px 6px 12px
+        margin: 32px 0 19px 0
 
-    .section_header_big
-        color: #222222
-        font-size: 38px
-        font-weight: 700
-        line-height: 27px
-        text-transform: uppercase
-        margin-top: 38px
-        margin-bottom: 40px
-        text-align: center
+.section_subheader
+    color: #222222
+    font-size: 17px
+    font-weight: 400
+    text-align: center
+    line-height: 17px
+    &_3
+        color: #ffffff
+        margin-bottom: 56px
+    
 
+.advantages
+    padding: 71px 0 113px 0
+    
     .adv_item
         display: flex
         justify-content: center
@@ -164,14 +192,14 @@ nav
     width: 113px
     height: 113px
     border-radius: 100%
-    background-color: #1eacc7
+    background-color: $color-blue
 
 .advantages .adv_item .adv_item_wrapper
     margin-left: 26px
     width: 342px
 
     .adv_item_header
-        color: #1eacc7
+        color: $color-blue
         font-size: 17px
         font-weight: 400
         line-height: 21px
@@ -181,3 +209,79 @@ nav
         font-size: 15px
         font-weight: 300
         line-height: 21px
+
+
+.mobile
+    background: url('../img/bg/bg_second.jpg') center center/cover no-repeat
+    min-height: 864px
+    padding: 48px 0 80px 0
+
+    .row
+    margin-top: 32px
+
+    &_item
+       position: relative
+       display:block
+       width: 320px
+       height: 280px
+       margin: 0 auto
+       margin-bottom: 19px
+       padding-top: 92px
+       &_1
+           background: url('../img/mobile/one_touch.jpg')
+       &_2
+           background: url('../img/mobile/feed.jpg') 
+       &_3
+           background: url('../img/mobile/prices.jpg')
+       &_4
+           background: url('../img/mobile/payment.jpg')
+       &_5
+           background: url('../img/mobile/feedback.jpg')
+       &_6
+           background: url('../img/mobile/split.jpg')
+
+       &_text
+            color: #ffffff
+            font-size: 24px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+       &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            left: 50%
+            top: 219px
+            transform: translateX(-50%)
+            width: 26px
+            height: 26px
+            background-color: #000000
+            border-radius: 100%
+            cursor: pointer
+            
+            
+      
+.choice
+    
+    .subsection_1
+        padding: 57px 0 138px 0
+        height: 499px
+        background-color: #070716
+    .subsection_2
+        height: 397px
+        background: url('../img/bg/bg_for_car.jpg') center center/cover no-repeat 
+    &_car
+        display: block
+        width: 759px
+        margin: 0 auto
+    &_text
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        text-align: center
+    
+
+
+
+
