@@ -166,6 +166,8 @@ nav
     &_3
         color: #ffffff
         margin: 32px 0 19px 0
+    &_4
+        margin-bottom: 0px
 
 .section_subheader
     color: #222222
@@ -279,7 +281,61 @@ nav
         font-weight: 300
         text-align: center
     
-
+.require
+    padding: 68px 0 84px 0
+    &_block
+        margin: 33px 0 33px 0
+        &_nmb
+            margin-bottom: 0px
+    &_header
+        line-height: 17px
+        color: #1ca8c3
+        font-size: 22px
+        font-weight: 400
+        &_red
+            color: $color-red
+    &_content
+        margin-top: 20px
+        list-style-type: none
+        padding-left: 52px
+        li 
+            position: relative
+            margin-bottom: 10px
+            color: #222222
+            font-size: 17px
+            font-weight: 400
+            line-height: 23px
+            &:before 
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url('../icons/points/mark.png') center (center/cover) no-repeat
+        &_red
+            li 
+                position: relative
+                margin-bottom: 10px
+                color: #222222
+                font-size: 17px
+                font-weight: 400
+                line-height: 23px
+                &:before 
+                    content: ''
+                    display: block
+                    position: absolute
+                    left: -32px
+                    top: 3px
+                    width: 21px
+                    height: 20px
+                    background: url('../icons/points/mark_red.png') center (center/cover) no-repeat
+                      
+    &_footer
+        font-size: 17px
+        color: #1ca8c3
+        font-weight: 400
 
 
 
