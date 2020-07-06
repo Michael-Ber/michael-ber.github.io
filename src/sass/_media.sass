@@ -1,0 +1,90 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+ 
+    .main
+        &_header
+            font-size: 50px
+        &_subheader
+            font-size: 30px
+    
+    .section_header_big
+        font-size: 32px
+    .advantages
+        .adv_item
+            &_wrapper
+                width: 308px
+    
+    .mobile
+        &_item
+            width: 270px
+            height: 260px
+            &_text
+                font-size: 20px
+            &_plus
+                top: 191px
+    .require
+        &_footer
+            br
+                display: none
+    
+    .footer
+        &_links
+            &_1row_item_1
+                margin-right: 16px
+            &_2row_item_2
+                margin-right: 7px
+                font-size: 10px
+
+@media (max-width: 991px)
+    .menu
+        position: fixed
+        left: -50%
+        width: 50%
+        flex-direction: column
+        align-items: center
+        background-color: rgba(0, 0, 0, 0.9)
+        height: 100vh
+        transition: .5s all
+
+    header
+        position: relative
+        .short_menu
+            position: absolute
+            top: 50%
+            right: 5%
+            transform: translateY(-50%)
+            span
+                display: block
+                width: 15px
+                height: 2px
+                background-color: #fff
+                margin-bottom: 3px
+
+                
+        .activity
+            span
+                &:nth-child(1)
+                    transform: rotate(-45deg) translateX(-21%)
+                    transition: .1s all
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: rotate(45deg) translateX(-21%)
+                    transition: .1s all
+    
+    .subheader
+        &_official
+            font-size: 11px
+    
+    .main
+        &_header
+            font-size: 35px
+        &_subheader
+            font-size: 22px
+    
+   
+    
